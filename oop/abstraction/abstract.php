@@ -14,7 +14,7 @@ class ConcereteClass extends AbstractClass
         }else {
             $prefix = "";
         }
-        return "{$prefix}{$separator}{$name}";
+        return "{$prefix}{$separator} {$name}";
     }
 }
 $class = new ConcereteClass;
