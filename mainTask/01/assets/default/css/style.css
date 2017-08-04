@@ -1,0 +1,19 @@
+.nav-basic{
+    background-color:#2EB6E4;
+    margin:5px;color:#ffffff
+}
+.nav-menu{
+    background-color:#2EB6E4;    
+}
+.nav-menu > li > a:hover{
+    color: #000; 
+    background-color: #333;
+}
+.text-white{
+    color:#ffffff;
+}
+.slider-basic{
+    width: 100%;
+    height: 50px;
+}
+.nav-basic a:hover { color: #000!important; }

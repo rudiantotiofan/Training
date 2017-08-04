@@ -4,7 +4,7 @@
     <title>Task - 04</title>
   </head>
   <body>
-    <table border="1">
+    <table border="1s">
       <tr>
         <td colspan="2"><center>Kalkulator sederhana</center></td>
       </tr>
