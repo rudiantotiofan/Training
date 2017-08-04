@@ -19,9 +19,7 @@ if(isset($_POST['simpan'])=='simpan'){
         <tr>
           <td>Data binary :</td>
           <td>
-            <textarea rows="10" cols="40" name="data">
-              <?php echo $stream->getData();?>
-            </textarea>
+            <textarea rows="10" cols="40" name="data"><?php echo $stream->getData();?></textarea>
           </td>
         </tr>
         <tr>
