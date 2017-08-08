@@ -26,8 +26,6 @@
       $main = new mainClass();
       $main->downloadFile($_POST['url'],"/downloads");
     }
-    
     ?>
-
   </body>
 </html>
