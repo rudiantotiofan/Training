@@ -4,7 +4,7 @@ class Person
     public $name;
     public $age;
 
-    function __construct()
+    function __construct($n,$a)
     {
         $this->name=$n;
         $this->age=$a;
@@ -18,6 +18,7 @@ class Person
     public function display()
     {
         echo "Welcome ".$this->name."<br>";
+        return $this->age - $this->ag;
     }
 }
 $person = new Person("Pankaj",25);

@@ -16,9 +16,9 @@ class mainClass
         $this->data[9] = $n10;
     }
     public function sortData($data){
-        for($i=0; $i<$this->n-1; $i++)
+        for($i=0; $i<=$this->n-2; $i++)
         {
-            for($j=0; $j<$this->n-1; $j++)
+            for($j=$this->n-2; $j>=$i; $j--)
             {
                 if($data[$j]> $data[$j+1]){
                     $temp= $data[$j+1];
@@ -26,7 +26,6 @@ class mainClass
                     $data[$j]= $temp;
                 }
             }
-
         }
         return $data;
     }

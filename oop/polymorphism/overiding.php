@@ -1,7 +1,7 @@
 <?php
 class Foo{
     function myFoo(){
-        return "Bar";
+        return "Foo";
     }
 }
 class Bar extends Foo{
