@@ -15,6 +15,7 @@ class mainClass
         $fp = fopen("downloads/".$filename, 'w');
         fwrite($fp, $data);
         fclose($fp);
+        echo '<tr><td colspan="2">File telah disimpan pada folder download dengan nama '.$filename.'</td></tr>';
 
     }
 }

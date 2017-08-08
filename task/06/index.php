@@ -19,13 +19,13 @@
             <input type="reset" name="reset" />
           </td>
         </tr>
+        <?php
+        if(isset($_POST['download'])=='download'){
+          $main = new mainClass();
+          $main->downloadFile($_POST['url'],"/downloads");
+        }
+        ?>
       </form>
     </table>
-    <?php
-    if(isset($_POST['download'])=='download'){
-      $main = new mainClass();
-      $main->downloadFile($_POST['url'],"/downloads");
-    }
-    ?>
   </body>
 </html>
