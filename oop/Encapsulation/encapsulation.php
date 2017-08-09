@@ -1,8 +1,8 @@
 <?php 
 class Person
 {
-    public $name;
-    public $age;
+    private $name;
+    private $age;
 
     function __construct($n,$a)
     {
