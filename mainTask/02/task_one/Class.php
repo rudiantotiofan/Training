@@ -189,6 +189,5 @@ class player{
         if($this->mana < 0){$this->mana = 0;}
         return array("basic"=>20,"crit"=>rand(0,10),"miss"=>rand(0,1));
     }
-    
 }
 ?>

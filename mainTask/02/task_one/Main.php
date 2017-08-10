@@ -26,8 +26,8 @@ $input = $main->disHome();
             break;
         case "start": 
             try{
-                if(count($main->player)<1){
-                    throw new exception("create new player first !, Press any button.");
+                if(count($main->player)<2){
+                    throw new exception("need minimum 2 player for play !, Press any button.");
                 }else{
                     while($main->survivePlayer()>1){
                         foreach($main->player as $val){
@@ -52,13 +52,16 @@ $input = $main->disHome();
                                 fgets(STDIN);
                                 goto batle;
                             }
-                            if($main->survivePlayer()==1){
-                                echo "The one survive is ".$main->winnerPlayer();
-                                fgets(STDIN);
-                                }
-                            if($input=="exit"){goto home; break;}
+                        }
+                        if($main->survivePlayer()==1){
+                             echo "The one survive is ".$main->winnerPlayer().", Congratulation !!";
+                             fgets(STDIN);
                         }                
                     }//endwhile
+                    foreach($player as $key=>$val){ //reset player stat
+                        $player[$key]->reset(40,100);
+                        $main->updateStatus($player[$key]->getPlayerStat()); //update status player
+                    }
                 }
 
             }catch(exception $e){
